@@ -1,0 +1,17 @@
+/* remove title section from Tree Style Tabs */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] > #sidebar-header {
+     visibility: collapse;  
+}
+
+/* merge nav bar and title bar and hide tabs */
+window[windowtype="navigator:browser"] #titlebar { margin-bottom: -35px !important; }
+window[windowtype="navigator:browser"] #titlebar-buttonbox { height: 34px !important; } /* minmaxclose */
+window[windowtype="navigator:browser"] #titlebar-content { margin-bottom: 0px !important; }
+window[windowtype="navigator:browser"] #TabsToolbar { background-color: var(--topBar-col) !important; border-bottom: rgba(255,255,255,0.02) solid 1px; } /* hide mysterious bottom line - might need to adjust */
+window:not([customizing]) #TabsToolbar>*:not(:last-child) { visibility: hidden; height: 34px; }
+window:not([customizing]) #nav-bar { border-top: 0px !important; margin-right: 138px; margin-top: -32px; }
+window:not([customizing]) .tabbrowser-tab { display: none; }
+
+#nav-bar {
+     box-shadow: none !important;
+}
