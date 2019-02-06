@@ -3,6 +3,8 @@
 This is a quick and dirty `userChrome.css` for Firefox that I use on Windows 10 machines.
 It is a bit of scraped together CSS for which I will, at some time in the future, credit the original authors.
 
+It is compatible with **Firefox 65**.
+
 ![Screenshot](firefox-treestyle-userchrome.png)
 
 ## How to use?
